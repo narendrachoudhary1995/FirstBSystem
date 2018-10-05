@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Activity.FlightSearchResult">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/MyFancyTheme"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:gravity="right"
+                    android:text="New Delhi"
+                    android:id="@+id/toolbarorigin"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="18sp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:src="@drawable/flight_icon_white" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1.25"
+                    android:gravity="left"
+                    android:text="Mumbai"
+                    android:id="@+id/toolbardestination"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passenger_and_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15sp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_weight="2.37"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 Passengers"
+                        android:id="@+id/toolbarpassenger"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_weight="2.37">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2sp"
+                        android:layout_weight="2.25"
+                        android:gravity="left">
+
+                        <ImageView
+                            android:layout_width="14sp"
+                            android:layout_height="14sp"
+                            android:src="@drawable/ic_calender" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:text="15 SEP"
+                            android:id="@+id/toolbardate"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/calendar_part_"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="center"
+        android:layout_marginTop="3sp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calrndar_view"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:textColorSelected="@color/colorPrimary"></devs.mulham.horizontalcalendar.HorizontalCalendarView>
+
+        <ImageView
+            android:id="@+id/calendar_direct_open"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_calender"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_part_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar_part_">
+        >
+
+        <LinearLayout
+            android:id="@+id/other_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/one_way_search_flight_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="50sp"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/noflightfound"
+                android:text="No Flight Found!"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Bottom_navigation_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:gravity="center"
+            android:weightSum="8">
+
+            <TextView
+                android:id="@+id/non_stop_only"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Non Stop Only"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:text="Morning Departure"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:text="Go Air"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".02"
+                android:background="@color/disable_color"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="1.2dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/filter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sort Aad Filter"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

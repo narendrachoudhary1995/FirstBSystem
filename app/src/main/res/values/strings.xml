@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Travelers Bridge</string>
+    <string name="login_to_account">LOGIN TO ACCOUNT</string>
+    <string name="get_personalise_experience_and_offer_here">Get Personalise Experience and Offer Here</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="sign_up_with_facebook">Sign up with facebook</string>
+    <string name="sign_up_to_account">SIGN UP TO ACCOUNT</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="referral_code">Referral Code(Optional)</string>
+    <string name="verified_by_otp">This Number Will be verified by OTP</string>
+    <string name="account_password">Password (minimum 6 Characters)</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_search_flight">SearchFlight</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_flight1">SearchFlight1</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="one_way">One Way</string>
+    <string name="round_trip">Round Trip</string>
+    <string name="multi_city">Multi City</string>
+    <string name="already_selected">All</string>
+    <string name="address">Address</string>
+    <string name="fare_rules">Fare Rules</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string-array name="user_type"><item>Admin</item>
+    <item>User</item>
+    </string-array>
+    <string-array name="class_of_passengers">
+        <item>All</item>
+        <item>Economy</item>
+        <item>Premium Economy</item>
+        <item>Business</item>
+        <item>Premium Business</item>
+        <item>First</item>
+    </string-array>
+    <string-array name="person_title">
+        <item>Mr.</item>
+        <item>Ms.</item>
+    </string-array>
+    <string-array name="person_gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="enquiry_type">
+        <item>Tickets</item>
+        <item>Flights</item>
+        <item>Cancellation</item>
+        <item>Refund</item>
+        <item>Account</item>
+    </string-array>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="first_adults">First Adults</string>
+    <string name="second_adults">Second Adults</string>
+    <string name="third_adults">Third Adults</string>
+    <string name="fourth_adults">Fourth Adults</string>
+    <string name="fifth_adults">Fifth Adults</string>
+    <string name="sixth_adults">Sixth Adults</string>
+    <string name="seventh_adults">Seventh Adults</string>
+    <string name="eighth_adults">Eighth Adults</string>
+    <string name="ninth_adults">Ninth Adults</string>
+    <string name="first_children">First Children</string>
+    <string name="second_children">Second Children</string>
+    <string name="third_children">Third Children</string>
+    <string name="fourth_children">Fourth Children</string>
+    <string name="fifth_children">Fifth Children</string>
+    <string name="sixth_children">Sixth Children</string>
+    <string name="seventh_children">Seventh Children</string>
+    <string name="eighth_children">Eighth Children</string>
+    <string name="ninth_children">Ninth Children</string>
+    <string name="first_infant">First Infant</string>
+    <string name="second_infant">Second Infant</string>
+    <string name="third_infant">Third Infant</string>
+    <string name="fourth_infant">Fourth Infant</string>
+    <string name="fifth_infant">Fifth Infant</string>
+    <string name="sixth_infant">Sixth Infant</string>
+    <string name="seventh_infant">Seventh Infant</string>
+    <string name="eighth_infants">Eighth Infant</string>
+    <string name="ninth_infants">Ninth Infant</string>
+    <string name="january">January</string>
+    <string name="fabruary">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="jun">Jun</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="date_partition">/</string>
+    <string name="Adults">adults</string>
+    <string name="Children">children</string>
+    <string name="Infants">Infants</string>
+    <string name="admin">Admin</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="leave_a_message">Leave a Message</string>
+    <string name="title_activity_flight_search_result_round_trip">FlightSearchResultRoundTrip
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

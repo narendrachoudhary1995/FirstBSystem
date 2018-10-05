@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#C0C0C0</color>
+    <color name="text_color">#C0C0C0</color>
+    <color name="white">#ffff</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000</color>
+    <color name="light_black">#696969</color>
+    <color name="light_blue">#8470ff</color>
+    <color name="disable_color">#A0A0A0</color>
+    <color name="partition_color">#505050</color>
+    <color name="dark_orange">#FF8C00</color>
+</resources>

@@ -1,0 +1,2018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Activity.PassengerDetails">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/place_and_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/bothLocations"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Delhi To Ahmedabad"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5sp"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/icon_flight_passenger"
+                                    android:layout_width="30sp"
+                                    android:layout_height="18sp"
+                                    android:layout_marginLeft="3sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/airways_name_passenger"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="jet Airway"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/fight_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9W-323"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/location_origin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Delhi"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/origin_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="15-Sep-2018"
+                                android:textSize="11sp" />
+
+
+                            <TextView
+                                android:id="@+id/origin_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="22:55"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/origin_airport_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Indra Gandhi Airport"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/origin_airport_terminal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Terminal 3"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="18sp"
+                                android:src="@drawable/duration_clock" />
+
+                            <TextView
+                                android:id="@+id/duration_between_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5sp"
+                                android:text="1h:45m"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/destination_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ahmedabad"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/destination_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="15-Sep-2018"
+                                android:textSize="11sp" />
+
+
+                            <TextView
+                                android:id="@+id/destination_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="22:55"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/destination_airport_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Indra Gandhi Airport"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/destination_airport_terminal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Terminal 3"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/travels_details_background_blue"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Please take time to read this following"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fare_rules"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4sp"
+                                android:clickable="true"
+                                android:text="@string/fare_rules"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/white"></LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="1sp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2sp"
+                            android:background="@color/colorPrimary"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/privacy_policy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2sp"
+                                android:clickable="true"
+                                android:text="Privacy Policy"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/white"></LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="I have read accept and agree to abide by travellersbridge.com"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4sp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/term_and_condition"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4sp"
+                                    android:clickable="true"
+                                    android:text="Term and Condition"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1sp"
+                                    android:background="@color/white"></LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="1sp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4sp"
+                                android:background="@color/colorPrimary"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4sp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/privacy_policy_again"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4sp"
+                                    android:clickable="true"
+                                    android:text="Privacy Policy"
+                                    android:textColor="@color/white"
+                                    android:textSize="11sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1sp"
+                                    android:background="@color/white"></LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3sp"
+                        android:text="Personal Details"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/first_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id1_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_email_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/email"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fourth_part"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_mobile_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/mobile_number"
+                                    android:inputType="number"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fifth_part"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/address"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sixth_part"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_reference"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="Reference(Company/Individual Name)"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secopnd_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id2_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title2"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender2"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id3_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title3"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender3"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fourth_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id4_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title4"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender4"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fifth_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id5_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title5"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender5"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sixth_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id6_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title6"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender6"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/seventh_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id7_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title7"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender7"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/eighth_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id8_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title8"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender8"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ninth_passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/passenger_id9_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@color/colorPrimary"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/passenger_id9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3sp"
+                            android:text="Adults 1"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personal_details9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8sp"
+                        android:layout_marginRight="8sp"
+                        android:layout_marginTop="8sp"
+                        android:background="@drawable/travels_details_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/first_part9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_person_title9"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_title"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="textEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_first_name9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/first_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_part9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender9"
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3.2"
+                                android:entries="@array/person_gender"
+                                android:prompt="@string/already_selected"
+                                android:textAlignment="viewEnd"
+                                android:theme="@style/ThemeOverlay.AppCompat.Light"></Spinner>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5.8"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/personal_detail_last_name9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:hint="@string/last_name"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/third_part9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black">
+
+                                <TextView
+                                    android:id="@+id/date_of_birth9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:backgroundTint="@color/black"
+                                    android:clickable="true"
+                                    android:hint="@string/date_of_birth"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/black"
+                                    android:textSize="13sp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3sp"
+                        android:text="Payment Details"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/travels_details_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/base_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Base Price"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15sp"
+                                android:text="Tex"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15sp"
+                                android:text="Other Charge"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15sp"
+                                android:text="Total"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2">
+
+                            <TextView
+                                android:id="@+id/base_price_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:text="1800"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tex_price_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:text="1800"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/other_price_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:text="₹ 150"
+
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/total_price_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1800"
+                                android:layout_marginTop="10sp"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/travels_details_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WALLET CREDIT (246601.00):"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15sp"
+                                android:text="EBS:"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/wallet_credit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/black" />
+
+                                <RadioButton
+                                    android:id="@+id/ebs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/black" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/dark_orange"
+                            android:text="Note*"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:text="By click on conform you are agree to all Terms and condition. Bank changes may apply based on your card/bank"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <Button
+                            android:id="@+id/proceed_to_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="ProceedToPayment"
+                            android:background="@color/dark_orange"
+                            android:text="Proceed To Payment"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

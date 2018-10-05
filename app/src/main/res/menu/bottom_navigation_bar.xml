@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/morning_departure" android:title="MORNING DEPARTURES"></item>
+    <item android:id="@+id/go_air" android:title="GO AIR"></item>
+    <item android:id="@+id/short_and_filter" android:icon="@drawable/filter" android:title="SEARCH AND FILTER"></item>
+    <item android:id="@+id/non_stop_only" android:title="NON STOP ONLY"></item>
+</menu>
+    <!--
+
+    -->

@@ -1,0 +1,2930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEPARTURE"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:textColor="@color/white"
+            android:text="UDP-JAI,29 Sep" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:textColor="@color/white"
+            android:text="RETURN" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+       android:background="@color/white"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <ScrollView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/first_fragment_first_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/airways1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name1"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image1"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time1"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time1"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time1"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop1"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/white"
+                    ></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/airways"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:id="@+id/airways_name"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1.7"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/airway_image"
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/drop_down_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jet Airways"
+                                android:textColor="@color/disable_color"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/depart_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5"
+                                    android:gravity="left"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/reach_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right"
+                                    android:text="23:20"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1sp"
+                                android:background="@color/disable_color"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/travel_time"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:text="2h 10m"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/stop_non_stop"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:layout_weight="1"
+                                    android:text="Non Stop"
+                                    android:textColor="@color/disable_color"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2sp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:src="@drawable/ic_black_plane_icon_1" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="2.3"
+                            android:text="Rs 2,927"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+<LinearLayout
+    android:layout_width="0sp"
+    android:layout_weight="0.02"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    ></LinearLayout>
+        <ScrollView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_margin="2.8sp"
+            android:layout_weight="1.4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/first_fragment_second_content"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/ic_back_arrow_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="12sp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:10"
+                                android:layout_marginLeft="3sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 1499"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

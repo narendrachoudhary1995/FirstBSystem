@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        tools:context=".Fragments.OneWay">
+
+        <LinearLayout
+            android:id="@+id/first_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="10sp"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/white"
+                        android:text="domestic"
+                        android:id="@+id/domestic"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/international"
+                        android:buttonTint="@color/white"
+                        android:text="international"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/From_To_Part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="15sp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/from_part"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/from_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FROM"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:id="@+id/from_location_dialog_text_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/selected_from_city_short"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ORI"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/dr"
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/white_down_arrow_2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/selected_from_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Origin"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/middle_part"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_marginTop="18sp">
+
+                        <ImageView
+                            android:id="@+id/from_flight_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="12sp"
+                            android:src="@drawable/flight_icon_white" />
+
+                        <ImageView
+                            android:id="@+id/from_flight_icon_return"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/flight_icon_white_return" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/to_part"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/to_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TO"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:id="@+id/to_location_dialog_text_linear_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/to_location_dialog_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DES"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/destination_drop_down"
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:src="@drawable/white_down_arrow_2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/destination_full_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Destination"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="15sp"
+                android:background="@color/partition_color"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Calendar_Part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="18sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/upper_calender_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+
+                    <LinearLayout
+                        android:id="@+id/calendar_departure"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:layout_weight="4.98"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/departure_calender_open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DEPARTURE"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12sp"
+                                android:src="@drawable/ic_calender" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/departure_date_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8sp"
+                            android:text="29 AUG 18"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="0sp"
+                        android:layout_weight=".02"
+                        android:background="@color/partition_color"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/calendar_return"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="15sp"
+                        android:layout_weight="4.49"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/return_calender_open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RETURN"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12sp"
+                                android:src="@drawable/ic_calender" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/return_date_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8sp"
+                            android:text="29 AUG 18"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/calendar_second_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TRAVELLERS"
+                        android:textColor="@color/text_color"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/second_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="20sp"
+                android:background="@color/partition_color"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/number_of_passenger_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/travellers_adult"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="3.32"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="45sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Adults"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(12+Y)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/adults_plus_minus_par"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/adults_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <LinearLayout
+                            android:layout_width="15sp"
+                            android:layout_height="1sp"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/text_color"></LinearLayout>
+
+                        <TextView
+                            android:id="@+id/adults_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="15sp"
+                            android:layout_height="1sp"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/text_color"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/adults_minus"
+                            android:layout_width="18sp"
+                            android:layout_height="4sp"
+                            android:layout_marginTop="18dp"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:padding="10dp"
+                            tools:ignore="Orientation"></LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1sp"
+                    android:layout_height="150sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_weight=".02"
+                    android:background="@color/partition_color"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/travellers_children"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="3.32"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="45sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Children"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(2+12Y)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/children_plus_minus_par"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/children_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <LinearLayout
+                            android:layout_width="15sp"
+                            android:layout_height="1sp"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/text_color"></LinearLayout>
+
+                        <TextView
+                            android:id="@+id/children_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="15sp"
+                            android:layout_height="1sp"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/text_color"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/children_minus"
+                            android:layout_width="18sp"
+                            android:layout_height="4sp"
+                            android:layout_marginTop="18sp"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            tools:ignore="Orientation"></LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1sp"
+                    android:layout_height="150sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_weight=".02"
+                    android:background="@color/partition_color"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/travellers_infants"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="3.32"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="45sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Infants"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(0-2Y)"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/infants_plus_minus_par"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/infants_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+                        <LinearLayout
+                            android:layout_width="15sp"
+                            android:layout_height="1sp"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/text_color"></LinearLayout>
+
+                        <TextView
+                            android:id="@+id/infants_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <LinearLayout
+                            android:layout_width="15sp"
+                            android:layout_height="1sp"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/text_color"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/infants_minus"
+                            android:layout_width="18sp"
+                            android:layout_height="4sp"
+                            android:layout_marginTop="18sp"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            tools:ignore="Orientation"></LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/class_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CABIN CLASS"
+                    android:textColor="@color/text_color" />
+
+                <LinearLayout
+                    android:id="@+id/class_drop_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinner_for_select_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="15sp"
+                        android:entries="@array/class_of_passengers"
+                        android:prompt="@string/already_selected"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                    </Spinner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="15sp"
+                        android:background="@color/partition_color"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_flight_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/search_flight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:background="@drawable/login_button_background"
+                    android:gravity="center"
+                    tools:ignore="Orientation">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEARCH  FLIGHT"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
